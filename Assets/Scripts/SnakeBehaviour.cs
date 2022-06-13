@@ -80,11 +80,14 @@ public class SnakeBehaviour : MonoBehaviour
 
             contador = contador + 1;
             CurrentScore.text = contador.ToString();
+            MoveSpeed = MoveSpeed + 0.5f;
+            SteerSpeed = SteerSpeed + 0.5f;
+            if (contador == 15)
+            {
 
-            MoveSpeed = MoveSpeed + 1;
-            SteerSpeed = SteerSpeed + 1;
 
-        }
+            }
+         }
     }
 
 }
